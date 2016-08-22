@@ -1,0 +1,7 @@
+class_id,name,description,teacher_id
+1,"Underwater Basket Weaving","Learning Java",6
+2,SQL,"Learing SQL",6
+3,Math,"Algebraic Equations",7
+4,Science,Biology,7
+5,Lunch,"Eating Lunch",8
+6,Recess,"Playing outsit",8

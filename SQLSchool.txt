@@ -1,0 +1,83 @@
+SELECT `teacher`.`teacher_id`,
+    `teacher`.`first_name`,
+    `teacher`.`last_name`,
+    `teacher`.`age`,
+    `teacher`.`salary`
+FROM `week4day1project`.`teacher`;
+
+
+SELECT `class`.`class_id`,
+    `class`.`name`,
+    `class`.`description`,
+    `class`.`teacher_id`
+FROM `week4day1project`.`class`;
+
+
+
+SELECT `student`.`studentid`,
+    `student`.`first_name`,
+    `student`.`last_name`,
+    `student`.`grade`,
+    `student`.`gpa`
+FROM `week4day1project`.`student`;
+
+
+
+SELECT `class`.`class_id`,
+    `class`.`name`,
+    `class`.`description`,
+    `class`.`teacher_id`
+FROM `week4day1project`.`class`
+WHERE teacher_id = 6;
+
+
+SELECT `class_student`.`class_student_id`,
+    `class_student`.`class_id`,
+    `class_student`.`student_id`
+FROM `week4day1project`.`class_student`
+WHERE class_id = 1;
+
+
+SELECT `class_student`.`class_student_id`,
+    `class_student`.`class_id`,
+    `class_student`.`student_id`
+FROM `week4day1project`.`class_student`
+WHERE student_id = 1;
+
+
+SELECT `student`.`studentid`,
+    `student`.`first_name`,
+    `student`.`last_name`,
+    `student`.`grade`,
+    `student`.`gpa`
+FROM `week4day1project`.`student`
+WHERE first_name like 'a%';
+
+
+UPDATE `week4day1project`.`teacher`
+SET
+`first_name` = 'Superman'
+WHERE `teacher_id` = 6;
+
+
+UPDATE `week4day1project`.`class`
+SET
+
+`name` = 'Underwater Basket Weaving'
+
+WHERE `class_id` = 1;
+
+
+
+UPDATE `week4day1project`.`student`
+SET
+
+`first_name` = 'Wonder',
+`last_name` = 'Woman'
+
+WHERE `studentid` = 1;
+
+
+
+DELETE FROM `week4day1project`.`student`
+WHERE studentid = 10;
